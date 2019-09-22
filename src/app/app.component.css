@@ -1,0 +1,82 @@
+#command
+{ width:180px;
+}
+#path {
+  vertical-align: top;
+}
+#subpath {
+  vertical-align: top;
+}
+#command option{
+  width:100px;
+}
+#slct2
+{ width:180px;
+}
+#request {
+  width: 300px;
+  text-align:left;
+}
+#console{
+  padding-top: 10px  ;
+}
+#response{
+  width: 150px;
+  margin-left:10px;
+  text-align:left;
+}
+label {
+  width:180px;
+  clear:left;
+  text-align:right;
+  padding-right:10px;
+}
+#row {width: 100%;}
+#col-xs-3
+{
+  height:100%;
+  position:fixed;
+  right:0;
+  overflow: scroll;
+
+  }
+h2 {
+  text-align:left;
+}
+nav {
+  width:100%;
+  position: fixed;
+  z-index: 100;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  width: 20%
+}
+body{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  height: 100%;
+  max-height: 100%;
+  overflow-x: hidden;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+button{
+  padding:10px;
+  margin-left:5px;
+  width: 70px;
+  height: 50px;
+}

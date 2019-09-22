@@ -1,0 +1,33 @@
+<div >
+  <h2 >
+    CONTROL
+    <button  type="button"  id="clear" (click)="ser.clearAll(com.CONTROL)"
+             class="btn btn-danger">
+      CLEAR
+    </button>
+  </h2>
+  <table>
+    <tr>
+      <th>Path</th>
+      <th>Value</th>
+      <th>Result</th>
+      <th>Actions</th>
+    </tr>
+
+    <tr *ngFor="let path of com.CONTROL" >
+      <td >{{ path }}</td>
+      <td >
+
+        <input type="number">
+      <td [id]="path"></td>
+      <td><button type="button" value="/STATUS"  (click)="ser.postrequest( '/CONTROL/', path)"
+                  class="btn btn-primary">
+        POST
+      </button>
+        <button type="button" value="/STATUS"  (click)="ser.clear(path)"
+                class="btn btn-danger">
+          Clear
+        </button></td>
+    </tr>
+  </table>
+</div>

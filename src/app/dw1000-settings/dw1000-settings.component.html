@@ -1,0 +1,41 @@
+<div >
+  <h2 >
+    DW1000SETTINGS
+    <button type="button" id="getAll"  (click)="ser.getAll('/DW1000SETTINGS/',com.DW1000SETTINGS)"
+            class="btn btn-primary">GET ALL
+    </button>
+    <button  type="button"  id="clear" (click)="ser.clearAll(com.DW1000SETTINGS)"
+            class="btn btn-danger">
+      CLEAR
+    </button>
+  </h2>
+  <table>
+    <tr>
+      <th>Path</th>
+      <th>Value</th>
+      <th>Result</th>
+      <th>Actions</th>
+    </tr>
+
+    <tr *ngFor="let path of com.DW1000SETTINGS" >
+      <td >{{ path }}</td>
+      <td >
+
+        <input type="number">
+      <td [id]="path"></td>
+      <td><button type="button"   (click)="ser.postrequest( '/DW1000SETTINGS/', path)"
+                  class="btn btn-primary">
+        POST
+      </button>
+        <button type="button"  (click)="ser.getRequest( '/DW1000SETTINGS/', path)"
+                class="btn btn-primary">
+          GET
+        </button>
+        <button type="button"  (click)="ser.clear(path)"
+                class="btn btn-danger">
+          Clear
+        </button>
+      </td>
+    </tr>
+  </table>
+</div>

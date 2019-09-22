@@ -1,0 +1,105 @@
+#command
+{ width:180px;
+}
+#path {
+  vertical-align: top;
+}
+#subpath {
+  vertical-align: top;
+}
+#command option{
+  width:100px;
+}
+#slct2
+{ width:180px;
+}
+label {
+  width:180px;
+  clear:left;
+  text-align:right;
+  padding-right:10px;
+}
+
+h2 {
+  text-align:left;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  width: 20%
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+button{
+  padding:10px;
+  margin-left:5px;
+  width: 70px;
+  height: 50px;
+}
+#command
+{ width:180px;
+}
+#path {
+  vertical-align: top;
+}
+#subpath {
+  vertical-align: top;
+}
+#command option{
+  width:100px;
+}
+#slct2
+{ width:180px;
+}
+label {
+  width:180px;
+  clear:left;
+  text-align:right;
+  padding-right:10px;
+}
+
+h2 {
+  text-align:left;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  width: 20%
+}
+#getAll{
+  padding:10px;
+  margin-left:5px;
+  width: 80px;
+  height: 50px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+#clear{
+  width:70px;
+  height: 50px;}
+button{
+  padding:10px;
+  margin-left:5px;
+  width: 62px;
+  height: 50px;
+}

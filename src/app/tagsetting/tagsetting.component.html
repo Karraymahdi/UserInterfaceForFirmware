@@ -1,0 +1,39 @@
+<div >
+  <h2>
+    TAG SETTINGS
+    <button type="button" id="getAll"  (click)="ser.getAll('/tagsettings/',com.tagsettings)"
+            class="btn btn-primary">GET ALL
+    </button>
+    <button  type="button"   id="clear" (click)="ser.clearAll(com.tagsettings)"
+             class="btn btn-danger">CLEAR
+    </button>
+  </h2>
+  <table>
+    <tr>
+      <th>Path</th>
+      <th>Value</th>
+      <th>Result</th>
+      <th>Actions</th>
+    </tr>
+
+    <tr *ngFor="let path of com.tagsettings" >
+      <td >{{ path }}</td>
+      <td >
+        <input #todo type="number" >
+      <td [id]="path"></td>
+      <td><button type="button" value="/STATUS"  (click)="ser.postrequest( '/tagsettings/', path,todo.valueAsNumber)"
+                  class="btn btn-primary">
+        POST
+      </button>
+        <button type="button" value="/STATUS"  (click)="ser.getRequest( '/tagsettings/', path)"
+                class="btn btn-primary">
+          GET
+        </button>
+        <button type="button" value="/STATUS"  (click)="ser.clear( path)"
+                class="btn btn-danger">
+          clear
+        </button>
+      </td>
+    </tr>
+  </table>
+</div>
